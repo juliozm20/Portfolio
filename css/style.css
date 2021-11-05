@@ -135,6 +135,12 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
   height: auto;
