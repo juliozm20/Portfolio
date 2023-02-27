@@ -1,0 +1,110 @@
+{
+  "menu": {
+    "menu-home": "Inicio",
+    "menu-about": "Sobre",
+    "menu-skills": "Habilidades",
+    "menu-services": "Servicios",
+    "menu-portfolio": "Portafolio",
+    "menu-contact": "Contacto"
+  },
+  "home": {
+    "role": "Lead Ingeniero en Soporte",
+    "role-desc": "Soporte Empresarial & <br> Desarrollo Front-End",
+    "role-contact": "Contacto <i class='uil uil-message button__icon'>",
+    "scroll": "Desplazarse hacia abajo"
+  },
+  "about": {
+    "about-title": "Sobre Mi",
+    "about-subtitle": "Mi introducción",
+    "about-desc": "Soporte y desarrollo de aplicaciones web. Entusiasta de las últimas y mejores funciones para mejorar la productividad diaria. Apasionado del software y del trabajo de calidad.",
+    "about-years": "Años de  <br /> Experiencia",
+    "about-projects": "Proyectos <br /> completados",
+    "about-companies": "Empresas <br /> trabajadas",
+    "about-cv": "Descargar CV <i class='uil uil-download-alt button__icon'></i>"
+  },
+  "skills": {
+    "skills-title": "Habilidades",
+    "skills-subtitle": "Mi nivel técnico",
+    "skill-one": "Desarrollo Front-End",
+    "skill-one-yr": "3+ años",
+    "skill-adv": "Avanzado",
+    "skill-int": "Intermedio",
+    "skill-beg": "Principiante",
+    "skill-two": "Desarrollo Back-End",
+    "skill-two-yr": "2+ años",
+    "skill-three": "Bases de Datos",
+    "skill-three-yr": "4+ años",
+    "skill-four": "Herramientas",
+    "skill-four-yr": "5+ años",
+    "skill-five": "Control de Versiones",
+    "skill-five-yr": "3+ años",
+    "skill-six": "Monitoreo",
+    "skill-six-yr": "3+ años"
+  },
+  "qualification": {
+    "qualification-title": "Cualificaciones",
+    "qualification-subtitle": "Mi viaje",
+    "work-title": "<i class='uil uil-briefcase-alt qualification__icon'></i> Experiencia Laboral",
+    "edu-title": "<i class='uil uil-graduation-cap qualification__icon'></i> Educación",
+    "work-one": "Lead Especialista en Servicios - Ingeniero en Soporte",
+    "work-one-date": "<i class='uil uil-calendar-alt'></i> 2022 - Actual",
+    "work-two": "Ingeniero en Soporte II",
+    "work-three": "Desarrollador .Net",
+    "work-four": "Analista de Sistemas",
+    "edu-one": "Ingeniería en Tecnologías de la Información",
+    "edu-two": "Inglés Avanzado"
+  },
+  "services": {
+    "services-title": "Servicios",
+    "services-subtitle": "Qué ofrezco",
+    "services-one": "Desarrollo <br /> Front-End",
+    "view-more": "Ver más",
+    "services-one-taskone": "&nbsp;Interfaz de usuario responsivo (móvil primero)",
+    "services-one-tasktwo": "&nbsp;SPA (aplicaciones de página única) para una veloz capacidad de respuesta",
+    "services-one-taskthree": "&nbsp;SEO posicionamiento en buscadores",
+    "services-one-taskfour": "&nbsp;Plantillas personalizadas UI/UX dedicadas",
+    "services-two": "Desarrollo <br /> Back-End",
+    "services-two-taskone": "&nbsp;Alto rendimiento para aplicaciones en tiempo real",
+    "services-two-tasktwo": "&nbsp;Escalabilidad efectiva",
+    "services-two-taskthree": "&nbsp;Comprometido a ofrecer un SLA de tiempo de actividad superior al 99.98%.",
+    "services-two-taskfour": "&nbsp;Reutilización para una asistencia rápida entre equipos funcionales",
+    "services-three": "Ciclo de vida de Proyecto",
+    "services-three-taskone": "&nbsp;Metodologías ágiles",
+    "services-three-tasktwo": "&nbsp;Entregables MVP para resultados de valor rápido",
+    "services-three-taskthree": "&nbsp;Apoyo posterior a la entrega del proyecto",
+    "services-three-taskfour": "&nbsp;Mantenimiento dedicado para mayor escalabilidad y rendimiento"
+  },
+  "portfolio": {
+    "portfolio-title": "Portafolio",
+    "portfolio-subtitle": "Trabajos más recientes"
+  },
+  "project": {
+    "project-title": "¿Idea para un proyecto?",
+    "project-subtitle": "¡Hagámoslo realidad!"
+  },
+  "contact": {
+    "contact-title": "Contacto",
+    "contact-subtitle": "Ponte en contacto",
+    "contact-form__name": "Nombre",
+    "contact-form__email": "Correo Electrónico",
+    "contact-form__project": "Proyecto",
+    "contact-form__message": "Mensaje",
+    "contact-form__send": "Enviar Mensaje <i class='uil uil-message button__icon'></i>"
+  },
+  "name-error": {
+    "valueMissing": "El campo Nombre no puede estar vacío"
+  },
+  "email-error": {
+    "valueMissing": "El campo Correo no puede estar vacío",
+    "typeMismatch": "El campo Correo no tiene el formato correcto"
+  },
+  "project-error": {
+    "valueMissing": "El campo Proyecto no puede estar vacío"
+  },
+  "message-error": {
+    "valueMissing": "El campo Mensaje no puede estar vacío"
+  },
+  "footer": {
+    "footer-copyright": "&#169; Julio Lozano. Todos los derechos reservados"
+  }
+}

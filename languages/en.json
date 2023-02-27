@@ -1,0 +1,110 @@
+{
+  "menu": {
+    "menu-home": "Home",
+    "menu-about": "About",
+    "menu-skills": "Skills",
+    "menu-services": "Services",
+    "menu-portfolio": "Portfolio",
+    "menu-contact": "Contact"
+  },
+  "home": {
+    "role": "Lead Support Engineer",
+    "role-desc": "Enterprise Support & <br> Frontend Development",
+    "role-contact": "Contact me <i class='uil uil-message button__icon'>",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "about-title": "About Me",
+    "about-subtitle": "My introduction",
+    "about-desc": "Supporting and developing web applications. Enthusiastic for the latest and greatest features to enhance everyday productivity. Passionate about software and quality work.",
+    "about-years": "Years <br /> Experience",
+    "about-projects": "Completed <br /> projects",
+    "about-companies": "Companies <br /> worked",
+    "about-cv": "Download CV <i class='uil uil-download-alt button__icon'></i>"
+  },
+  "skills": {
+    "skills-title": "Skills",
+    "skills-subtitle": "My technical level",
+    "skill-one": "Frontend Development",
+    "skill-one-yr": "3+ years",
+    "skill-adv": "Advanced",
+    "skill-int": "Intermediate",
+    "skill-beg": "Beginner",
+    "skill-two": "Backend Development",
+    "skill-two-yr": "2+ years",
+    "skill-three": "Databases",
+    "skill-three-yr": "4+ years",
+    "skill-four": "Tools",
+    "skill-four-yr": "5+ years",
+    "skill-five": "Version control",
+    "skill-five-yr": "3+ years",
+    "skill-six": "Monitoring",
+    "skill-six-yr": "3+ years"
+  },
+  "qualification": {
+    "qualification-title": "Qualifications",
+    "qualification-subtitle": "My journey",
+    "work-title": "<i class='uil uil-briefcase-alt qualification__icon'></i> Work Experience",
+    "edu-title": "<i class='uil uil-graduation-cap qualification__icon'></i> Education",
+    "work-one": "Lead Services Specialist - Digital Customer Support Engineer",
+    "work-one-date": "<i class='uil uil-calendar-alt'></i> 2022 - Current",
+    "work-two": "Support Engineer II",
+    "work-three": ".Net Developer",
+    "work-four": "Systems Analyst",
+    "edu-one": "Information Technologies Engineering",
+    "edu-two": "Advanced English"
+  },
+  "services": {
+    "services-title": "Services",
+    "services-subtitle": "What I offer",
+    "services-one": "Frontend Development",
+    "view-more": "View More",
+    "services-one-taskone": "&nbsp;Responsive user interface (mobile-first)",
+    "services-one-tasktwo": "&nbsp;SPA (single page application) for quick responsiveness",
+    "services-one-taskthree": "&nbsp;SEO friendly (top browser-listed)",
+    "services-one-taskfour": "&nbsp;Dedicated UI/UX custom templates",
+    "services-two": "Backend Development",
+    "services-two-taskone": "&nbsp;High Performance for Real-time Applications",
+    "services-two-tasktwo": "&nbsp;Effective Scalability",
+    "services-two-taskthree": "&nbsp;Commited to deliver uptime SLA above 99.98%",
+    "services-two-taskfour": "&nbsp;Reusability for fast support across functional teams",
+    "services-three": "Project <br /> Lifecycle",
+    "services-three-taskone": "&nbsp;Agile Methodologies",
+    "services-three-tasktwo": "&nbsp;MVP deliverables for fast-value results",
+    "services-three-taskthree": "&nbsp;Post Go-Live support",
+    "services-three-taskfour": "&nbsp;Dedicated Maintability for scalability and performance"
+  },
+  "portfolio": {
+    "portfolio-title": "Portfolio",
+    "portfolio-subtitle": "My recent work"
+  },
+  "project": {
+    "project-title": "Got a project idea?",
+    "project-subtitle": "Let's make it a reality!"
+  },
+  "contact": {
+    "contact-title": "Contact Me",
+    "contact-subtitle": "Get in touch",
+    "contact-form__name": "Name",
+    "contact-form__email": "Email",
+    "contact-form__project": "Project",
+    "contact-form__message": "Message",
+    "contact-form__send": "Send Message <i class='uil uil-message button__icon'></i>"
+  },
+  "name-error": {
+    "valueMissing": "The Name field cannot be empty"
+  },
+  "email-error": {
+    "valueMissing": "The Email field cannot be empty",
+    "typeMismatch": "The Email format is invalid"
+  },
+  "project-error": {
+    "valueMissing": "The Project field cannot be empty"
+  },
+  "message-error": {
+    "valueMissing": "The Message field cannot be empty"
+  },
+  "footer": {
+    "footer-copyright": "&#169; Julio Lozano. All rights reserved"
+  }
+}
