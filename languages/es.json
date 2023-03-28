@@ -3,7 +3,7 @@
     "menu-home": "Inicio",
     "menu-about": "Sobre",
     "menu-skills": "Habilidades",
-    "menu-services": "Servicios",
+    "menu-services": "Cualificaciones",
     "menu-portfolio": "Portafolio",
     "menu-contact": "Contacto"
   },
@@ -76,7 +76,10 @@
   },
   "portfolio": {
     "portfolio-title": "Portafolio",
-    "portfolio-subtitle": "Trabajos más recientes"
+    "portfolio-subtitle": "Trabajos más recientes",
+    "portfolio-project-one": "Red social desarrollado con MERN",
+    "portfolio-project-two": "Startup demo utilizando HTML, CSS y JavaScript",
+    "portfolio-project-three": "Encriptador de Texto utilizando HTML, CSS y JavaScript"
   },
   "project": {
     "project-title": "¿Idea para un proyecto?",
@@ -96,7 +99,7 @@
   },
   "email-error": {
     "valueMissing": "El campo Correo no puede estar vacío",
-    "typeMismatch": "El campo Correo no tiene el formato correcto"
+    "typeMismatch": "El formato del correo es invalido"
   },
   "project-error": {
     "valueMissing": "El campo Proyecto no puede estar vacío"

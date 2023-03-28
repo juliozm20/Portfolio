@@ -1,0 +1,101 @@
+/* PORTFOLIO */
+.portfolio__container {
+  overflow: initial;
+}
+
+.portfolio__content {
+  display: grid; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  justify-content: center; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  /* padding: 0 1.5rem; */
+}
+
+.portfolio__img {
+  width: 250px; /*WAS 265px*/
+  border-radius: 0.75rem; /*WAS .5rem*/
+  margin-bottom: 1.25rem; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  justify-self: center;
+}
+
+.portfolio__data {
+  width: 265px;
+  justify-self: center;
+  margin-bottom: 50px;
+}
+
+.portfolio__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
+/*----------------- SWIPER  ---------------------*/
+.swiper-wrapper {
+  margin-bottom: 15px;
+}
+
+.portfolio__container .swiper-button-prev,
+.portfolio__container .swiper-button-next {
+  width: initial;
+  height: initial;
+  margin: initial;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.portfolio__container .swiper-button-prev {
+  left: -1rem;
+  top: 6.5rem;
+}
+
+.portfolio__container .swiper-button-next {
+  right: -1rem;
+  top: 6.5rem;
+}
+
+.portfolio__container .swiper-slide {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio__container .swiper-pagination-bullets {
+  bottom: 0;
+}
+
+.portfolio__container .swiper-pagination-bullets-active {
+  background-color: var(--title-color);
+}
+
+/* PROJECT IN MIND */
+.project {
+  text-align: center;
+}
+
+.project__bg {
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
+
+.project__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description {
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description {
+  color: #fff;
+}
+
+.project__img {
+  width: 232px;
+  justify-self: center;
+}

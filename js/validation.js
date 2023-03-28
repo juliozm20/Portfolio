@@ -38,9 +38,8 @@ const mensajesError = {
 const email = document.querySelector("#email-err");
 let emailArr = email.getAttribute("data-value").split(";");
 
-const language = document.querySelector("#lang").innerText;
-
 const showError = async (inputType, input) => {
+  const language = document.querySelector("#lang").innerText;
   const req = await fetch(`/languages/${language}.json`);
   const content = await req.json();
   const eSect = "email-error";

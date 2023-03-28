@@ -1,0 +1,109 @@
+/* NAV */
+
+.nav {
+  /*WAS HERE; NOW REMOVED: max-width: 968px;*/
+  height: calc(var(--header-height) + 0.5rem); /*WAS var(--header-height)*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(
+    --body-color
+  ); /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1); /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  padding-inline: 1.5rem; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  border-radius: 3rem; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  transition: background 0.4s; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+}
+
+.nav__logo,
+.nav__toggle,
+.nav__close /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/ {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  display: flex; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  font-size: 1.25rem; /*WAS 1.1rem;*/
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: var(--first-color);
+}
+
+/* THIS WAS max-width: 767px*/
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    width: 88%; /*was 100%*/
+    /*was bottom: -100%*/
+    left: 0;
+    right: 0; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+    bottom: -60%; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+    margin: 0 auto; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+    background-color: var(--body-color);
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1); /*WAS  0 -1px 4px rgba(0, 0, 0, 0.15);*/
+    padding: 2rem 1.5rem 4rem;
+    border-radius: 2rem; /*WAS  1.5rem 1.5rem 0 0;*/
+    transition: bottom 0.3s; /*WAS transition: 0.3s;*/
+  }
+}
+
+.nav__list {
+  grid-template-columns: repeat(3, max-content); /*WAS repeat(3, 1fr);*/
+  justify-content: center; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  gap: 2rem 3rem; /*WAS gap: 2rem;*/
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.25rem; /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO -----*/
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  font-weight: var(--font-medium);
+  transition: color 0.3s;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__link i {
+  /*----- FROM NEWER RESPONSIVE PORTFOLIO VIDEO (PROBABLY SAME AS BELOW)-----*/
+  font-size: 1.25rem;
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.5rem; /*WAS 1.3rem*/
+  bottom: 0.7rem; /*WAS .5rem*/
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav__close:hover {
+  color: var(
+    --first-color-alt
+  ); /* WASNT INCLUDED IN THE NEW VIDEO, MIGHT KEEP IT THOUGH*/
+}
+
+/* show menu*/
+.show-menu {
+  bottom: 1rem; /*WAS 0*/
+}
+/* Active link */
+.active-link {
+  color: var(--first-color);
+}

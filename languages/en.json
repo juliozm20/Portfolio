@@ -3,7 +3,7 @@
     "menu-home": "Home",
     "menu-about": "About",
     "menu-skills": "Skills",
-    "menu-services": "Services",
+    "menu-services": "Qualifications",
     "menu-portfolio": "Portfolio",
     "menu-contact": "Contact"
   },
@@ -76,7 +76,10 @@
   },
   "portfolio": {
     "portfolio-title": "Portfolio",
-    "portfolio-subtitle": "My recent work"
+    "portfolio-subtitle": "My recent work",
+    "portfolio-project-one": "Social network site using MERN stack development",
+    "portfolio-project-two": "Startup demo using HTML, CSS, and JavaScript",
+    "portfolio-project-three": "Text encrypter using HTML, CSS, and JavaScript"
   },
   "project": {
     "project-title": "Got a project idea?",

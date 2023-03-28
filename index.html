@@ -10,9 +10,22 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <!--SWIPER CSS-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
     <!--CSS-->
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/qualifications.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel=" stylesheet" href="css/style.css" />
+
     <title>Julio Lozano</title>
   </head>
 
@@ -52,11 +65,12 @@
             </li>
             <li class="nav__item">
               <a
-                href="#services"
+                href="#qualifications"
                 class="nav__link"
                 data-section="menu"
                 data-value="menu-services"
-                ><i class="uil uil-briefcase-alt nav__icon"></i> Services</a
+                ><i class="uil uil-briefcase-alt nav__icon"></i>
+                Qualifications</a
               >
             </li>
             <li class="nav__item">
@@ -90,7 +104,7 @@
           </div>
         </div>
         <div id="lang">
-          <span class="nav__link">ES</span>
+          <span class="nav__link">EN</span>
         </div>
       </nav>
     </header>
@@ -114,44 +128,10 @@
                 class="home__social-icon"
                 ><i class="uil uil-github-alt"></i
               ></a>
-              <!-- <a
-                href="https://www.facebook.com/julioenrique.lozanoochoa/"
-                target="_blank"
-                class="home__social-icon"
-                ><i class="uil uil-facebook-f"></i
-              ></a> -->
             </div>
 
             <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                         130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                         97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                         0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                         165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="20"
-                    y="16"
-                    xlink:href="img/developer.png"
-                  />
-                </g>
-              </svg>
+              <img src="img/pic.png" alt="" class="home__blob" />
             </div>
             <div class="home__data">
               <h1 class="home__title">Julio Lozano</h1>
@@ -190,6 +170,7 @@
           </div>
         </div>
       </section>
+
       <!--ABOUT-->
       <section class="about section" id="about">
         <h2
@@ -231,7 +212,7 @@
                 >
               </div>
               <div>
-                <span class="about__info-title">5</span>
+                <span class="about__info-title">03</span>
                 <span
                   class="about__info-name"
                   data-section="about"
@@ -265,6 +246,7 @@
           </div>
         </div>
       </section>
+
       <!--SKILLS-->
       <section class="skills section" id="skills">
         <h2
@@ -281,7 +263,7 @@
           >My technical level</span
         >
         <div class="skills__container container grid">
-          <div>
+          <div class="left-skills">
             <!--SKILLS 1-->
             <div class="skills__content skills__open">
               <div class="skills__header">
@@ -309,7 +291,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-html5-alt"></i>&nbsp; HTML
+                      <img
+                        src="/img/html.svg"
+                        alt="html"
+                        class="skillicon"
+                      />&nbsp; HTML
                     </h3>
                     <span
                       class="skills__number"
@@ -325,7 +311,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-css3-simple"></i>&nbsp; CSS
+                      <img
+                        src="/img/css-3.svg"
+                        alt="css"
+                        class="skillicon"
+                      />&nbsp; CSS
                     </h3>
                     <span
                       class="skills__number"
@@ -341,7 +331,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-java-script"></i>&nbsp; JavaScript
+                      <img
+                        src="/img/javascript.svg"
+                        alt="javascript"
+                        class="skillicon"
+                      />&nbsp; JavaScript
                     </h3>
                     <span
                       class="skills__number"
@@ -357,23 +351,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-vuejs-alt"></i>&nbsp; Vue.js
-                    </h3>
-                    <span
-                      class="skills__number"
-                      data-section="skills"
-                      data-value="skill-beg"
-                      >Beginner</span
-                    >
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">
-                      <i class="uil uil-react"></i>&nbsp; React.js
+                      <img
+                        src="/img/react.svg"
+                        alt="reactjs"
+                        class="skillicon"
+                      />&nbsp; React.js
                     </h3>
                     <span
                       class="skills__number"
@@ -384,6 +366,26 @@
                   </div>
                   <div class="skills__bar">
                     <span class="skills__percentage skills__vue"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">
+                      <img
+                        src="/img/vue-js.svg"
+                        alt="vuejs"
+                        class="skillicon"
+                      />&nbsp; Vue.js
+                    </h3>
+                    <span
+                      class="skills__number"
+                      data-section="skills"
+                      data-value="skill-beg"
+                      >Beginner</span
+                    >
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
                   </div>
                 </div>
               </div>
@@ -416,7 +418,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-java-script"></i>&nbsp; Node JS
+                      <img
+                        src="/img/nodejs.svg"
+                        alt="nodejs"
+                        class="skillicon"
+                      />&nbsp; Node JS
                     </h3>
                     <span
                       class="skills__number"
@@ -432,7 +438,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-globe"></i>&nbsp; ASP.Net MVC (C#)
+                      <img
+                        src="/img/dot-net-core.svg"
+                        alt="asp.net"
+                        class="skillicon"
+                      />&nbsp; ASP.Net MVC (C#)
                     </h3>
                     <span
                       class="skills__number"
@@ -448,7 +458,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-fire"></i>&nbsp; Firebase
+                      <img
+                        src="/img/firebase.svg"
+                        alt="firebase"
+                        class="skillicon"
+                      />&nbsp; Firebase
                     </h3>
                     <span
                       class="skills__number"
@@ -491,7 +505,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-database"></i>&nbsp; SQL
+                      <img
+                        src="/img/microsoft-sql-server.svg"
+                        alt="sqlserver"
+                        class="skillicon"
+                      />&nbsp; SQL
                     </h3>
                     <span
                       class="skills__number"
@@ -507,7 +525,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-database"></i>&nbsp; MySQL
+                      <img
+                        src="/img/mysql.svg"
+                        alt="mysql"
+                        class="skillicon"
+                      />&nbsp; MySQL
                     </h3>
                     <span
                       class="skills__number"
@@ -523,7 +545,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-database"></i>&nbsp; MongoDB
+                      <img
+                        src="/img/mongodb.svg"
+                        alt="mongodb"
+                        class="skillicon"
+                      />&nbsp; MongoDB
                     </h3>
                     <span
                       class="skills__number"
@@ -540,7 +566,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="right-skills">
             <!--SKILLS 4-->
             <div class="skills__content skills__close">
               <div class="skills__header">
@@ -568,7 +594,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-desktop"></i>&nbsp; Jira
+                      <img
+                        src="/img/jira.svg"
+                        alt="jira"
+                        class="skillicon"
+                      />&nbsp; Jira
                     </h3>
                     <span
                       class="skills__number"
@@ -584,13 +614,17 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-desktop"></i>&nbsp; Rally
+                      <img
+                        src="/img/confluence.svg"
+                        alt="confluence"
+                        class="skillicon"
+                      />&nbsp; Confluence
                     </h3>
                     <span
                       class="skills__number"
                       data-section="skills"
-                      data-value="skill-beg"
-                      >Beginner</span
+                      data-value="skill-adv"
+                      >Advanced</span
                     >
                   </div>
                   <div class="skills__bar">
@@ -600,7 +634,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-clipboard-notes"></i>&nbsp; Salesforce
+                      <img
+                        src="/img/salesforce.svg"
+                        alt="salesforce"
+                        class="skillicon"
+                      />&nbsp; Salesforce
                     </h3>
                     <span
                       class="skills__number"
@@ -616,7 +654,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-clipboard-notes"></i>&nbsp; Service-Now
+                      <img
+                        src="/img/servicenow.svg"
+                        alt="servicenow"
+                        class="skillicon"
+                      />&nbsp; Service-Now
                     </h3>
                     <span
                       class="skills__number"
@@ -632,7 +674,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-arrow"></i>&nbsp; Postman
+                      <img
+                        src="/img/postman.svg"
+                        alt="postman"
+                        class="skillicon"
+                      />&nbsp; Postman
                     </h3>
                     <span
                       class="skills__number"
@@ -648,7 +694,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-laptop-cloud"></i>&nbsp; VMware
+                      <img
+                        src="/img/vmware.svg"
+                        alt="vmware"
+                        class="skillicon"
+                      />&nbsp; VMware
                     </h3>
                     <span
                       class="skills__number"
@@ -707,7 +757,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-github-alt"></i>&nbsp; Git
+                      <img
+                        src="/img/git.svg"
+                        alt="git"
+                        class="skillicon"
+                      />&nbsp; Git
                     </h3>
                     <span
                       class="skills__number"
@@ -765,7 +819,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-arrow"></i>&nbsp; Splunk
+                      <img
+                        src="/img/splunk.svg"
+                        alt="splunk"
+                        class="skillicon"
+                      />&nbsp; Splunk
                     </h3>
                     <span
                       class="skills__number"
@@ -781,7 +839,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-linux"></i>&nbsp; Linux
+                      <img
+                        src="/img/tux.svg"
+                        alt="linux"
+                        class="skillicon"
+                      />&nbsp; Linux
                     </h3>
                     <span
                       class="skills__number"
@@ -797,7 +859,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-docker"></i>&nbsp; Docker
+                      <img
+                        src="/img/docker.svg"
+                        alt="docker"
+                        class="skillicon"
+                      />&nbsp; Docker
                     </h3>
                     <span
                       class="skills__number"
@@ -813,7 +879,11 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-analysis"></i>&nbsp; AppDynamics
+                      <img
+                        src="/img/appdynamics.svg"
+                        alt="appdynamics"
+                        class="skillicon"
+                      />&nbsp; AppDynamics
                     </h3>
                     <span
                       class="skills__number"
@@ -829,7 +899,31 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">
-                      <i class="uil uil-cloud"></i>&nbsp; Azure
+                      <img
+                        src="/img/azure.svg"
+                        alt="azure"
+                        class="skillicon"
+                      />&nbsp; Azure
+                    </h3>
+                    <span
+                      class="skills__number"
+                      data-section="skills"
+                      data-value="skill-beg"
+                      >Beginner</span
+                    >
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__firebase"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">
+                      <img
+                        src="/img/aws-redshift.svg"
+                        alt="azure"
+                        class="skillicon"
+                      />&nbsp; AWS Redshift
                     </h3>
                     <span
                       class="skills__number"
@@ -849,7 +943,7 @@
       </section>
 
       <!--QUALIFICATIONS-->
-      <section class="qualification section">
+      <section class="qualification section" id="qualifications">
         <h2
           class="section__title"
           data-section="qualification"
@@ -886,7 +980,7 @@
             </div>
           </div>
 
-          <div class="quallification__sections">
+          <div class="qualification__sections">
             <!--QUALIFICATION CONTENT 1-->
             <div
               class="qualification__content qualification__active"
@@ -1038,7 +1132,7 @@
                     data-section="qualification"
                     data-value="edu-two"
                   >
-                    Advanced English
+                    Advanced English Course
                   </h3>
                   <span class="qualification__subtitle"
                     >College of Mount St. Vincent</span
@@ -1048,255 +1142,6 @@
                     2015-2015
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--SERVICES-->
-      <section class="services section" id="services">
-        <h2
-          class="section__title"
-          data-section="services"
-          data-value="services-title"
-        >
-          Services
-        </h2>
-        <span
-          class="section__subtitle"
-          data-section="services"
-          data-value="services-subtitle"
-          >What I offer</span
-        >
-        <div class="services__container container grid">
-          <!--SERVICES 1-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-arrow services__icon"></i>
-              <h3
-                class="services__title"
-                data-section="services"
-                data-value="services-one"
-              >
-                Frontend Development
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-              data-section="services"
-              data-value="view-more"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4
-                  class="services__modal-title"
-                  data-section="services"
-                  data-value="services-one"
-                >
-                  Frontend <br />
-                  Development
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-one-taskone"
-                    >
-                      &nbsp;Responsive user interface (mobile-first)
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-one-tasktwo"
-                    >
-                      &nbsp;SPA (single page application) for quick
-                      responsiveness
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-one-taskthree"
-                    >
-                      &nbsp;SEO friendly (top browser-listed)
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-one-taskfour"
-                    >
-                      &nbsp;Dedicated UI/UX custom templates
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!--SERVICES 2-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-server-network services__icon"></i>
-              <h3
-                class="services__title"
-                data-section="services"
-                data-value="services-two"
-              >
-                Backend Development
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-              data-section="services"
-              data-value="view-more"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4
-                  class="services__modal-title"
-                  data-section="services"
-                  data-value="services-two"
-                >
-                  Backend <br />
-                  Development
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-two-taskone"
-                    >
-                      &nbsp;High Performance for Real-time Applications
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-two-tasktwo"
-                    >
-                      &nbsp;Effective Scalability
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-two-taskthree"
-                    >
-                      &nbsp;Commited to deliver uptime SLA above 99.98%
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-two-taskfour"
-                    >
-                      &nbsp;Reusability for fast support across functional teams
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!--SERVICES 3-->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-sitemap services__icon"></i>
-              <h3
-                class="services__title"
-                data-section="services"
-                data-value="services-three"
-              >
-                Project <br />
-                Lifecycle
-              </h3>
-            </div>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-              data-section="services"
-              data-value="view-more"
-            >
-              View More
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4
-                  class="services__modal-title"
-                  data-section="services"
-                  data-value="services-three"
-                >
-                  Project <br />
-                  Lifecycle
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-three-taskone"
-                    >
-                      &nbsp;Agile Methodologies
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-three-tasktwo"
-                    >
-                      &nbsp;MVP deliverables for fast-value results
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-three-taskthree"
-                    >
-                      &nbsp;Post Go-Live support
-                    </p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p
-                      data-section="services"
-                      data-value="services-three-taskfour"
-                    >
-                      &nbsp; Dedicated Maintability for scalability and
-                      performance
-                    </p>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -1322,12 +1167,47 @@
           <div class="swiper-wrapper">
             <!--PORTFOLIO 1-->
             <div class="portfolio__content grid swiper-slide">
-              <img src="img/leadpatt.jpg" alt="" class="portfolio__img" />
+              <img src="img/sociary_img.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Sociary</h3>
+                <p
+                  class="portfolio__description"
+                  data-section="portfolio"
+                  data-value="portfolio-project-one"
+                >
+                  Social network site using MERN stack development
+                </p>
+                <a
+                  href="https://sociary.herokuapp.com/signin"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/juliozm20/sociary"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Code
+                  <i class="uil uil-arrow button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--PORTFOLIO 2-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="img/leadpatt_pic.jpg" alt="" class="portfolio__img" />
 
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Leadpatt</h3>
-                <p class="portfolio__description">
-                  Leadpatt site using pure HTML,CSS, and JavaScript
+                <p
+                  class="portfolio__description"
+                  data-section="portfolio"
+                  data-value="portfolio-project-two"
+                >
+                  Startup demo using HTML, CSS, and JavaScript
                 </p>
                 <a
                   href="https://www.leadpatt.com/"
@@ -1339,42 +1219,51 @@
                 </a>
               </div>
             </div>
-            <!--PORTFOLIO 2-->
-            <!-- <div class="portfolio__content grid swiper-slide">
-                  <img src="/img/portfolio2.jpg" alt="" class="portfolio__img">
-
-                  <div class="portfolio__data">
-                     <h3 class="portfolio__title">Trello</h3>
-                     <p class="portfolio__description">Trello clone using the MEVN stack</p>
-                     <a href="#" class="button button--flex button--small portfolio__button">
-                        Coming soon...
-                        <i class="uil uil-arrow-right button__icon"></i>
-                     </a>
-                  </div>
-               </div> -->
             <!--PORTFOLIO 3-->
-            <!-- <div class="portfolio__content grid swiper-slide">
-                  <img src="/img/portfolio3.jpg" alt="" class="portfolio__img">
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="img/text_encrypter_img.png"
+                alt=""
+                class="portfolio__img"
+              />
 
-                  <div class="portfolio__data">
-                     <h3 class="portfolio__title">Ecommerce</h3>
-                     <p class="portfolio__description">Online store using NodeJS, MongoDB, Strapi, and Bootstrap </p>
-                     <a href="#" class="button button--flex button--small portfolio__button">
-                        Coming soon...
-                        <i class="uil uil-arrow-right button__icon"></i>
-                     </a>
-                  </div>
-               </div> -->
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Text Encrypter</h3>
+                <p
+                  class="portfolio__description"
+                  data-section="portfolio"
+                  data-value="portfolio-project-three"
+                >
+                  Text encrypter using HTML, CSS, and JavaScript
+                </p>
+                <a
+                  href="https://juliozm20.github.io/Text-Encrypter/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/juliozm20/Text-Encrypter"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Code
+                  <i class="uil uil-arrow button__icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <!-- <div class="swiper-button-next"> -->
-          <!-- <i class="uil uil-angle-right-b swiper-portfolio-icon"></i> -->
-          <!-- </div> -->
-          <!-- <div class="swiper-button-prev"> -->
-          <!-- <i class="uil uil-angle-left-b swiper-portfolio-icon"></i> -->
-          <!-- </div> -->
+          <div class="swiper-button-next">
+            <!-- <i class="uil uil-angle-right-b swiper-portfolio-icon"></i> -->
+          </div>
+          <div class="swiper-button-prev">
+            <!-- <i class="uil uil-angle-left-b swiper-portfolio-icon"></i> -->
+          </div>
 
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -1431,67 +1320,14 @@
         >
 
         <div class="contact__container container grid">
-          <!-- <div>
-            <div class="contact__information">
-              <i class="uil uil-phone-alt contact__icon"></i>
-
-              <div>
-                <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">+52 871-735-8795</span>
-              </div>
-            </div>
-
-            <div class="contact__information">
-              <i class="uil uil-envelope-alt contact__icon"></i>
-
-              <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">juliolozm20@gmail.com</span>
-              </div>
-            </div>
-
-            <div class="contact__information">
-              <i class="uil uil-map-marker-alt contact__icon"></i>
-
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">Monterrey, Mex</span>
-              </div>
-            </div>
-          </div> -->
-
-          <form
-            action="https://formsubmit.co/bfcae790ea70ac477785c65fc52cf833"
-            method="POST"
-            class="contact__form grid"
-          >
-            <input type="text" name="_honey" style="display: none" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://juliozm20.github.io/Portfolio/success.html"
-            />
+          <form class="contact__form grid" id="contact-form">
             <div class="contact__inputs grid">
               <div class="contact__content">
-                <!-- <label
-                  for=""
-                  class="contact__label"
-                  data-section="contact"
-                  data-value="contact-form__name"
-                  >Name</label
-                >
                 <input
                   type="text"
+                  id="contact-name"
                   class="contact__input"
-                  name="name"
-                  required
-                /> -->
-                <input
-                  type="text"
-                  id="form-data"
-                  class="contact__input"
-                  name="name"
+                  name="user_name"
                   placeholder="Name"
                   data-type="name"
                   required
@@ -1513,9 +1349,9 @@
               <div class="contact__content">
                 <input
                   type="email"
-                  id="form-data"
+                  id="contact-email"
                   class="contact__input"
-                  name="email"
+                  name="user_email"
                   placeholder="Email"
                   data-type="email"
                   required
@@ -1532,16 +1368,15 @@
                   class="input-message-error"
                   data-section="email-error"
                   data-value="valueMissing;typeMismatch"
-                  >The Email field cannot be empty</span
-                >
+                ></span>
               </div>
             </div>
             <div class="contact__content">
               <input
                 type="text"
-                id="form-data"
+                id="contact-project"
                 class="contact__input"
-                name="project"
+                name="user_project"
                 placeholder="Project"
                 data-type="project"
                 required
@@ -1563,7 +1398,7 @@
             <div class="contact__content textarea">
               <textarea
                 name=""
-                id="form-data"
+                id="contact-message"
                 cols="0"
                 rows="7"
                 class="contact__textarea"
@@ -1586,9 +1421,10 @@
                 >The Message field cannot be empty</span
               >
             </div>
-
-            <div>
+            <p class="contact__message" id="contact-message2"></p>
+            <div class="contact_btn">
               <button
+                id="btnForm"
                 class="btn button button--flex"
                 type="submit"
                 data-section="contact"
@@ -1657,27 +1493,6 @@
               class="footer__social"
               ><i class="uil uil-github-alt"></i
             ></a>
-            <!-- <a
-              href="https://www.facebook.com/julioenrique.lozanoochoa/"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-facebook-f"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/julioenrique.lozanoochoa/"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-instagram"></i>
-            </a>
-            <a
-              href="https://twitter.com/JulioLo58642490"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-twitter-alt"></i>
-            </a> -->
           </div>
         </div>
         <p
@@ -1689,15 +1504,23 @@
         </p>
       </div>
     </footer>
-
     <!--SCROLL TOP-->
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
     <!--SWIPER JS-->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--MAIN JS-->
     <script type="module" src="js/main.js"></script>
+    <!-- EMAILJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

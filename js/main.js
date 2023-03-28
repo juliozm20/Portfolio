@@ -1,8 +1,6 @@
-//window.addEventListener('load', setup);
-
 import { validate } from "/js/validation.js";
 
-const inputs = document.querySelectorAll("#form-data");
+const inputs = document.querySelectorAll(".contact__input, .contact__textarea");
 
 inputs.forEach((input) => {
   input.addEventListener("blur", (input) => {
@@ -75,56 +73,26 @@ tabs.forEach((tab) => {
   });
 });
 
-/* Services Modal */
-
-// const get = document.getElementById.bind(document);
-
-const modalViews = document.querySelectorAll(".services__modal");
-const modalBtns = document.querySelectorAll(".services__button");
-const modalCloses = document.querySelectorAll(".services__modal-close");
-
-let modal = (modalclick) =>
-  modalViews[modalclick].classList.add("active-modal");
-
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener("click", () => modal(i));
-});
-
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove("active-modal");
-    });
-  });
-});
-
-// function setup() {
-//    let modalRoot = get('main');
-//    modalRoot.addEventListener('click', rootClick)
-
-//    function rootClick() {
-//       modalViews.classList.remove('active-modal');
-//    }
-// }
-
 /* Portfolio Swiper */
-// var swiper = new Swiper(".portfolio__container", {
-//    spaceBetween: 30,
-//    centeredSlides: true,
-//    loop: true,
-//    // autoplay: {
-//    //    delay: 5000,
-//    //    disableOnInteraction: false,
-//    // },
-//    pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//    },
-//    navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//    },
-// });
+let swiper = new Swiper(".portfolio__container", {
+  spaceBetween: 24,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // breakpoints: {
+  //   1200: {
+  //     slidesPerView: 2,
+  //     spaceBetween: -56,
+  //   },
+  // },
+});
 
 /* Testimonial */
 
@@ -136,17 +104,16 @@ const scrollActive = () => {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+    const sectionTop = current.offsetTop - 58;
     const sectionId = current.getAttribute("id");
+    const sectionsClass = document.querySelector(
+      ".nav__menu a[href*=" + sectionId + "]"
+    );
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
+      sectionsClass.classList.add("active-link");
     } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+      sectionsClass.classList.remove("active-link");
     }
   });
 };
@@ -154,17 +121,19 @@ window.addEventListener("scroll", scrollActive);
 
 /* Change background header */
 function scrollHeader() {
-  const nav = document.querySelector("#header");
-  if (this.scrollY >= 80) nav.classList.add("scroll-header");
-  else nav.classList.remove("scroll-header");
+  const header = document.querySelector("#header");
+  this.scrollY >= 50 // was 80
+    ? header.classList.add("scroll-header")
+    : header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
 
 /* Show Scroll Up */
 function scrollUp() {
   const scrollUp = document.querySelector("#scroll-up");
-  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
+  this.scrollY >= 350 /*WAS 560*/
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
 
@@ -205,8 +174,6 @@ const language = document.querySelector("#lang");
 const textChange = document.querySelectorAll("[data-section]");
 
 const email = document.querySelector("#email-err");
-let emailArr = email.getAttribute("data-value").split(";");
-const test = document.querySelectorAll("input[type=email]");
 
 const changeLanguage = async (lan) => {
   const req = await fetch(`../languages/${lan}.json`);
@@ -214,19 +181,132 @@ const changeLanguage = async (lan) => {
   for (const texts of textChange) {
     const section = texts.dataset.section;
     const value = texts.dataset.value;
+
+    const emailVal = [];
+
     if (section === "email-error") {
-      // debugger;
-      for (let i = 0; i < emailArr.length; i++) {
-        email.innerHTML = content[section][i];
+      if (lan === "ES") {
+        if (email.innerText === "The Email field cannot be empty") {
+          email.innerText = "El correo no puede estar vacío";
+        } else if (email.innerText === "The Email format is invalid") {
+          email.innerText = "El formato del correo es invalido";
+        }
+      } else if (lan === "EN") {
+        if (email.innerText === "The Email field cannot be empty") {
+          email.innerText = "El correo no puede estar vacío";
+        } else if (email.innerText === "El formato del correo es invalido") {
+          email.innerText = "The Email format is invalid";
+        }
       }
+    } else {
+      texts.innerHTML = content[section][value];
     }
-    texts.innerHTML = content[section][value];
   }
 };
 
 language.addEventListener("click", (e) => {
+  e.target.innerText === "EN"
+    ? (e.target.innerText = "ES")
+    : (e.target.innerText = "EN");
   changeLanguage(e.target.innerText);
-  e.target.innerText === "ES"
-    ? (e.target.innerText = "EN")
-    : (e.target.innerText = "ES");
 });
+
+/*EMAIL JS*/
+const contactForm = document.querySelector("#contact-form");
+const contactName = document.querySelector("#contact-name");
+const contactEmail = document.querySelector("#contact-email");
+const contactProject = document.querySelector("#contact-project");
+const contactMessage = document.querySelector("#contact-message");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_bpfmllu",
+      "template_fbau4yw",
+      "#contact-form",
+      "IlfDD62pq5eT5jrwQ"
+    )
+    .then(
+      () => {
+        if (language.innerText === "EN") {
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent!",
+            showConfirmButton: false,
+            timer: 3500,
+            width: 600,
+            padding: "3em",
+            backdrop: `
+    rgba(0,0,123,0.4)
+    url("/img/nyan-cat.gif")
+    left top
+    no-repeat
+  `,
+          });
+        } else {
+          Swal.fire({
+            icon: "success",
+            title: "Mensaje Enviado!",
+            showConfirmButton: false,
+            timer: 3500,
+            width: 600,
+            padding: "3em",
+            backdrop: `
+    rgba(0,0,123,0.4)
+    url("/img/nyan-cat.gif")
+    left top
+    no-repeat
+  `,
+          });
+        }
+      },
+      (error) => {
+        if (language.innerText === "EN") {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Un error ha ocurrido!",
+          });
+        }
+      }
+    );
+  contactName.value = "";
+  contactEmail.value = "";
+  contactProject.value = "";
+  contactMessage.value = "";
+};
+
+contactForm.addEventListener("submit", sendEmail);
+
+//scroll reveal
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 300,
+  // reset:true
+});
+
+sr.reveal(`.home__title`);
+sr.reveal(
+  `.home__subtitle, .home__description, .home__social-icon, .home__img, .button--flex`,
+  {
+    delay: 200,
+    origin: "bottom",
+    interval: 100,
+  }
+);
+sr.reveal(`.about`);
+sr.reveal(`.left-skills`, { origin: "left" });
+sr.reveal(`.right-skills`, { origin: "right" });
+sr.reveal(`.qualification__sections`);
+sr.reveal(`.portfolio__container`);
+sr.reveal(`.contact__container`);
