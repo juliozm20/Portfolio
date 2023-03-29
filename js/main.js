@@ -177,7 +177,7 @@ const email = document.querySelector("#email-err");
 
 const changeLanguage = async (lan) => {
   const req = await fetch(
-    `https://juliozm20.github.io/Portfolio/languages/${lan}.json`
+    `https://juliozm20.github.io/Portfolio/languages/${lan.toLowerCase()}.json`
   );
   const content = await req.json();
   for (const texts of textChange) {
