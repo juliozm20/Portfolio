@@ -41,7 +41,7 @@ let emailArr = email.getAttribute("data-value").split(";");
 const showError = async (inputType, input) => {
   const language = document.querySelector("#lang").innerText;
   const req = await fetch(
-    `https://juliozm20.github.io/Portfolio/languages/${lan.toLowerCase()}.json`
+    `https://juliozm20.github.io/Portfolio/languages/${language.toLowerCase()}.json`
   );
   const content = await req.json();
   const eSect = "email-error";
