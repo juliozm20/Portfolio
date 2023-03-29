@@ -1,4 +1,4 @@
-import { validate } from "/js/validation.js";
+import { validate } from "./validation.js";
 
 const inputs = document.querySelectorAll(".contact__input, .contact__textarea");
 
