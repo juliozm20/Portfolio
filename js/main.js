@@ -184,8 +184,6 @@ const changeLanguage = async (lan) => {
     const section = texts.dataset.section;
     const value = texts.dataset.value;
 
-    const emailVal = [];
-
     if (section === "email-error") {
       if (lan === "ES") {
         if (email.innerText === "The Email field cannot be empty") {
