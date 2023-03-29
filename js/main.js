@@ -176,7 +176,9 @@ const textChange = document.querySelectorAll("[data-section]");
 const email = document.querySelector("#email-err");
 
 const changeLanguage = async (lan) => {
-  const req = await fetch(`../../languages/${lan}.json`);
+  const req = await fetch(
+    `https://github.com/juliozm20/Portfolio/languages/${lan}.json`
+  );
   const content = await req.json();
   for (const texts of textChange) {
     const section = texts.dataset.section;
