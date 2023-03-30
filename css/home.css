@@ -4,9 +4,8 @@
 }
 
 .home__content {
-  grid-template-columns: 0.5fr 0fr; /*WAS 1.5rem */
+  grid-template-columns: 0.5fr 0fr;
   padding-top: 3.5rem;
-  /* align-items: center; */
   place-items: center;
 }
 
@@ -35,7 +34,7 @@
 }
 
 .home__data {
-  grid-column: 2/3; /*WAS 2/4*/
+  grid-column: 2/3;
 }
 
 .home__title {
@@ -71,11 +70,9 @@
 
 .home__scroll-button {
   color: var(--first-color);
-  /* transition: 0.3s; */
 }
 
 .home__scroll-button:hover {
-  /* transform: translateY(0.25rem); */
   animation: 1.5s ease-out 0s 1 bumpDown;
 }
 
