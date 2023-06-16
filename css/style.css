@@ -649,5 +649,18 @@ img {
     .portfolio__container .swiper-button-next {
       font-size: 3rem;
     }
+    .portfolio__img {
+      width: 200px;
+    }
+    .portfolio__content {
+      column-gap: 2rem;
+      grid-template-columns: repeat(20, 0.2fr);
+    }
+    .portfolio__data {
+      width: 100px;
+    }
+    .portfolio__button {
+      margin-bottom: 1rem;
+    }
   }
 }

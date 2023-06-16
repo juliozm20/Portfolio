@@ -86,12 +86,12 @@ let swiper = new Swiper(".portfolio__container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // breakpoints: {
-  //   1200: {
-  //     slidesPerView: 2,
-  //     spaceBetween: -56,
-  //   },
-  // },
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
 });
 
 /* Testimonial */
